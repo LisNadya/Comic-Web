@@ -13,19 +13,19 @@
         margin-bottom: 0;
         border-radius: 0;
     }
-
-    /* Add a gray background color and some padding to the footer */
-    footer {
-        background-color: #f2f2f2;
-        padding: 25px;
+    #myCarousel{
+        top:94px;
+        height:200px;
+    }
+    
+    #myCarousel img{
+        height:200px;
     }
 
     .carousel-inner img {
         width: 100%; /* Set width to 100% */
         margin: auto;
-        min-height:200px;
     }
-
     .box{
         display: inline-block;
         width: 10px;
@@ -79,9 +79,6 @@
         border:none;
     }
 
-    #myCarousel{
-        top:94px;
-    }
 
     .main{
         margin-top:100px;
@@ -137,6 +134,11 @@
         background:transparent;
         box-shadow: inset 0px 0px 0px 0px transparent;
         border-bottom:2px solid #fb8b73;
+    }
+
+    #filterContainer .titleCase{
+        background:#ecebeb;
+        padding:10px;
     }
 
     #filterContainer .btn-default{
@@ -290,6 +292,24 @@
          <div class="filterBox">
             <div class="title">Filter By</div>
             <form action="/action_page.php">
+                <div class="form-group titleCase">
+                    <center>
+                    <label class="radio-inline"><input type="radio" name="optradio" checked>All</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">#</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">A</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">B</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">C</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">D</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">E</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">F</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">G</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">H</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">I</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">J</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">K</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">L</label>
+                    </center>
+                </div>
                 <div class="form-group">
                     <label for="sel1">Genre:</label>
                     <select class="form-control" id="sel1">
