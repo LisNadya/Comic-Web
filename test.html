@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!--React-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+  
+<div class="row" id="headerContainer"></div>
+<div class="row">
+    <div class="col-sm-4">.col-sm-1</div>
+    <div class="col-sm-4">.col-sm-1</div>
+    <div class="col-sm-4">.col-sm-1</div>
+    <div class="col-sm-4">.col-sm-1</div>
+    <div class="col-sm-4">.col-sm-1</div>
+</div>
+<script type="text/babel">
+class Header extends React.Component {
+    render() {
+        return (
+            <div>
+                <div id="header">
+                    <nav>
+                        <a class="nav" href="listTitle.html">List of Titles</a>
+                        <a class="nav" href="test.html">Home</a>
+                    </nav>
+                    <div class="box" id="box1"></div><div class="box" id="box2"></div><div class="box" id="box3"></div>
+                    <p id="title"><h1>On9Comics</h1></p>
+                </div>
+                <div id="subHeader">
+                    <input type="text" placeholder="Search"/>
+                </div>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<Header />, document.getElementById('headerContainer'))
+</script>
+
+</body>
+</html>
